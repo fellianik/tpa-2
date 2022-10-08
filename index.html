@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <form id="calculator">
+                <h1>BMI Calculator</h1>
+                <div class="input-container">
+                    <label class="label" for="weight">Weight</label>
+                    <span>:</span>
+                    <div class="input">
+                        <input class="input-field" type="number" min="0" name="weight" id="weight" placeholder="Put your weight" required />
+                        <span class="icon">KG</span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label class="label" for="height">Height</label>
+                    <span>:</span>
+                    <div class="input">
+                        <input class="input-field" type="number" min="0" name="height" id="height" placeholder="Put your height" required />
+                        <span class="icon">CM</span>
+                    </div>
+                </div>
+                <div class="hidden alerts">
+                    <p>Input your weight and height!!!</p>
+                </div>
+                <button type="submit" class="btn">Calculate BMI</button>
+                <button id="reset-btn" class="hidden reset">Reset</button>
+            </form>
+
+            <div id="hasil"></div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<!-- 
+    Specs
+        Buatlah aplikasi website untuk menghitung Body Mass Index (BMI) berdasarkan standar yang telah ditetapkan.
+        User harus memasukkan data Berat Badan dalam KG
+        User harus memasukkan data Tinggi Badan dalam CM
+        Rumus BMI untuk satuan KG dan CM adalah Berat Badan/(Tinggi Badan/100)^2
+        Aplikasi harus menampilkan status BMI sesuai dengan standar berikut:
+        BMI Categories:
+            Underweight = <18.5
+            Normal weight = 18.5 – 24.9
+            Overweight = 25 – 29.9
+            Obesity = BMI of 30 or greater
+
+    Penilaian akan dilakukan dari beberapa hal:
+
+        Kode HTML, CSS, dan JavaScript yang terorganisasi dengan baik
+        Logic yang sesuai dengan kebutuhan pada aplikasi
+        Tampilan dan output sesuai dengan Expected Result
+        Kemampuan peserta menggunakan Git & GitHub
+        Kemampuan peserta dalam mendeploy aplikasi website
+ -->
